@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NewJeans Random</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <main id="viewer">
+    <div id="photo-wrap">
+      <img id="photo" alt="" />
+      <div id="status" aria-live="polite"></div>
+    </div>
+    <footer id="controls">
+      <div id="member-label"></div>
+      <fieldset id="filters" aria-label="Members included in random pool">
+        <label><input type="checkbox" data-member="minji" checked> Minji</label>
+        <label><input type="checkbox" data-member="hanni" checked> Hanni</label>
+        <label><input type="checkbox" data-member="danielle" checked> Danielle</label>
+        <label><input type="checkbox" data-member="haerin" checked> Haerin</label>
+        <label><input type="checkbox" data-member="hyein" checked> Hyein</label>
+      </fieldset>
+      <button id="shuffle" type="button">Shuffle (Space)</button>
+    </footer>
+  </main>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
