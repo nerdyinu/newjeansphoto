@@ -122,7 +122,7 @@ async function crawlMember(member, memberIndex) {
   let completed = 1;
   let lastLogAt = Date.now();
   const tasks = pages.map(p => async () => {
-    const html = await fetchWithRetry(`https://${member}.network/?page=${p}`);
+    const html = await fetchWithRetry(`https://${member}.network/${p}`);
     return extractHashes(html);
   });
 
